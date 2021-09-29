@@ -59,7 +59,17 @@ window.addEventListener('load', function(){
     //FUNCIONES
     
     function setImgCancion(){
-            imagenCancion.src = `img/Canciones/imagen ${imgCancion[Math.floor(Math.random()* 17 )+1]}.jpeg`
+
+        imagenCancion.classList.remove('setImgCancion')
+        imagenCancion.classList.add('unsetImgCancion')
+        setTimeout(() => {
+                
+                imagenCancion.classList.add('setImgCancion')
+                imagenCancion.src = `img/Canciones/imagen ${imgCancion[Math.floor(Math.random()* 17 )+1]}.jpeg`
+                imagenCancion.classList.remove('unsetImgCancion')
+
+        }, 600);
+            
         }
     
 
@@ -93,15 +103,7 @@ window.addEventListener('load', function(){
         }else{
 
             if(imagenCancion.src == 'https://determined-dubinsky-d7a38e.netlify.app/img/headphones.jpg'){
-                imagenCancion.classList.remove('setImgCancion')
-                imagenCancion.classList.add('unsetImgCancion')
-                setTimeout(() => {
-                        imagenCancion.src = ''
-                        imagenCancion.classList.add('setImgCancion')
-                        setImgCancion()
-                        imagenCancion.classList.remove('unsetImgCancion')
-    
-                }, 601);
+                setImgCancion()
             }
 
             song.play();
@@ -129,15 +131,7 @@ window.addEventListener('load', function(){
                         setSongName();
                         playPause();
                         setTitle();
-
-                        imagenCancion.classList.remove('setImgCancion')
-                        imagenCancion.classList.add('unsetImgCancion')
-                        setTimeout(() => {
-                            imagenCancion.classList.remove('unsetImgCancion')
-                            imagenCancion.src = ''
-                            imagenCancion.classList.add('setImgCancion')
-                            setImgCancion();
-                        }, 601);
+                        setImgCancion();
                     }
                 }, 601);
             })
@@ -170,16 +164,7 @@ window.addEventListener('load', function(){
         setSongName();
         playPause();
         setTitle();
-
-        imagenCancion.classList.remove('setImgCancion')
-        imagenCancion.classList.add('unsetImgCancion')
-        setTimeout(() => {
-            imagenCancion.src = ''
-            imagenCancion.classList.remove('unsetImgCancion')
-            imagenCancion.classList.add('setImgCancion')
-            setImgCancion();
-        }, 601);
-        
+        setImgCancion();
     });
     forward.addEventListener('click', function(){
         removeSongName();
@@ -188,15 +173,7 @@ window.addEventListener('load', function(){
         setSongName();
         playPause();
         setTitle();
-
-        imagenCancion.classList.remove('setImgCancion')
-        imagenCancion.classList.add('unsetImgCancion')
-        setTimeout(() => {
-            imagenCancion.src = ''
-            imagenCancion.classList.remove('unsetImgCancion')
-            imagenCancion.classList.add('setImgCancion')
-            setImgCancion();
-        }, 601);
+        setImgCancion();
     });
 
     //PlayButton
