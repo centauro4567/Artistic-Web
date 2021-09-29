@@ -75,9 +75,9 @@ window.addEventListener('load', function(){
     
                         setTimeout(() => {
                             imagenCancion.style.width = ''
-                        }, 1000);
+                        }, 600);
     
-                    }, 500);
+                    }, 1000);
                 
                 }, 590);
 
