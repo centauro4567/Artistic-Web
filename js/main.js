@@ -79,9 +79,9 @@ window.addEventListener('load', function(){
     
                     }, 600);
                 
-                }, 50);
+                }, 100);
 
-        }, 590);
+        }, 100);
             
         }
     
