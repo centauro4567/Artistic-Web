@@ -92,7 +92,7 @@ window.addEventListener('load', function(){
             play_pause.src = 'icons/Play.png'
         }else{
 
-            if(imagenCancion.src == 'http://127.0.0.1:5500/img/headphones.jpg'){
+            if(imagenCancion.src == 'https://determined-dubinsky-d7a38e.netlify.app/img/headphones.jpg'){
                 imagenCancion.classList.remove('setImgCancion')
                 imagenCancion.classList.add('unsetImgCancion')
                 setTimeout(() => {
@@ -134,11 +134,11 @@ window.addEventListener('load', function(){
                         setTimeout(() => {
                             imagenCancion.classList.remove('unsetImgCancion')
                             imagenCancion.src = ''
-                            setImgCancion();
                             imagenCancion.classList.add('setImgCancion')
-                        }, 500);
+                            setImgCancion();
+                        }, 601);
                     }
-                }, 500);
+                }, 601);
             })
 
         }
@@ -174,9 +174,9 @@ window.addEventListener('load', function(){
         setTimeout(() => {
             imagenCancion.classList.remove('unsetImgCancion')
             imagenCancion.src = ''
-            setImgCancion();
             imagenCancion.classList.add('setImgCancion')
-        }, 500);
+            setImgCancion();
+        }, 601);
         
     });
     forward.addEventListener('click', function(){
@@ -191,9 +191,9 @@ window.addEventListener('load', function(){
         setTimeout(() => {
             imagenCancion.classList.remove('unsetImgCancion')
             imagenCancion.src = ''
-            setImgCancion();
             imagenCancion.classList.add('setImgCancion')
-        }, 500);
+            setImgCancion();
+        }, 601);
     });
 
     //PlayButton
