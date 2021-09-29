@@ -63,12 +63,20 @@ window.addEventListener('load', function(){
         imagenCancion.classList.remove('setImgCancion')
         imagenCancion.classList.add('unsetImgCancion')
         setTimeout(() => {
-                
-                imagenCancion.classList.add('setImgCancion')
+                imagenCancion.style.width = '0%'
                 imagenCancion.src = `img/Canciones/imagen ${imgCancion[Math.floor(Math.random()* 17 )+1]}.jpeg`
-                imagenCancion.classList.remove('unsetImgCancion')
+                
+                setTimeout(() => {
+                    imagenCancion.classList.add('setImgCancion')
+                    imagenCancion.classList.remove('unsetImgCancion')
 
-        }, 600);
+                    setTimeout(() => {
+                        imagenCancion.style.width = ''
+                    }, 2000);
+
+                }, 50);
+
+        }, 550);
             
         }
     
