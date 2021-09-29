@@ -64,18 +64,22 @@ window.addEventListener('load', function(){
         imagenCancion.classList.add('unsetImgCancion')
         setTimeout(() => {
                 imagenCancion.style.width = '0%'
-                
+
                 setTimeout(() => {
-
                     imagenCancion.src = `img/Canciones/imagen ${imgCancion[Math.floor(Math.random()* 17 )+1]}.jpeg`
-                    imagenCancion.classList.add('setImgCancion')
-                    imagenCancion.classList.remove('unsetImgCancion')
-
+                
                     setTimeout(() => {
-                        imagenCancion.style.width = ''
-                    }, 1000);
 
-                }, 1000);
+                        imagenCancion.classList.add('setImgCancion')
+                        imagenCancion.classList.remove('unsetImgCancion')
+    
+                        setTimeout(() => {
+                            imagenCancion.style.width = ''
+                        }, 1000);
+    
+                    }, 1000);
+                
+                }, 100);
 
         }, 590);
             
