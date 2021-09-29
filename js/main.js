@@ -74,9 +74,9 @@ window.addEventListener('load', function(){
                         imagenCancion.style.width = ''
                     }, 2000);
 
-                }, 50);
+                }, 20);
 
-        }, 550);
+        }, 590);
             
         }
     
