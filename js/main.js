@@ -96,7 +96,7 @@ window.addEventListener('load', function(){
                 imagenCancion.classList.remove('setImgCancion')
                 imagenCancion.classList.add('unsetImgCancion')
                 setTimeout(() => {
-                    
+                        imagenCancion.src = ''
                         imagenCancion.classList.add('setImgCancion')
                         setImgCancion()
                         imagenCancion.classList.remove('unsetImgCancion')
@@ -124,13 +124,14 @@ window.addEventListener('load', function(){
                 setTimeout(() => {
                     if(tiempoActual == duracion){
                         removeSongName();
-                        imagenCancion.classList.remove('setImgCancion')
-                        imagenCancion.classList.add('unsetImgCancion')
                         forwardSong();
                         song.classList.remove('playing');
                         setSongName();
                         playPause();
                         setTitle();
+
+                        imagenCancion.classList.remove('setImgCancion')
+                        imagenCancion.classList.add('unsetImgCancion')
                         setTimeout(() => {
                             imagenCancion.classList.remove('unsetImgCancion')
                             imagenCancion.src = ''
@@ -164,16 +165,17 @@ window.addEventListener('load', function(){
     //backward & forward
     backward.addEventListener('click', function(){
         removeSongName();
-        imagenCancion.classList.remove('setImgCancion')
-        imagenCancion.classList.add('unsetImgCancion')
         backwardSong();
         song.classList.remove('playing');
         setSongName();
         playPause();
         setTitle();
+
+        imagenCancion.classList.remove('setImgCancion')
+        imagenCancion.classList.add('unsetImgCancion')
         setTimeout(() => {
-            imagenCancion.classList.remove('unsetImgCancion')
             imagenCancion.src = ''
+            imagenCancion.classList.remove('unsetImgCancion')
             imagenCancion.classList.add('setImgCancion')
             setImgCancion();
         }, 601);
@@ -181,16 +183,17 @@ window.addEventListener('load', function(){
     });
     forward.addEventListener('click', function(){
         removeSongName();
-        imagenCancion.classList.remove('setImgCancion')
-        imagenCancion.classList.add('unsetImgCancion')
         forwardSong();
         song.classList.remove('playing');
         setSongName();
         playPause();
         setTitle();
+
+        imagenCancion.classList.remove('setImgCancion')
+        imagenCancion.classList.add('unsetImgCancion')
         setTimeout(() => {
-            imagenCancion.classList.remove('unsetImgCancion')
             imagenCancion.src = ''
+            imagenCancion.classList.remove('unsetImgCancion')
             imagenCancion.classList.add('setImgCancion')
             setImgCancion();
         }, 601);
