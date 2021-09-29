@@ -72,9 +72,9 @@ window.addEventListener('load', function(){
 
                     setTimeout(() => {
                         imagenCancion.style.width = ''
-                    }, 2000);
+                    }, 1000);
 
-                }, 20);
+                }, 2000);
 
         }, 590);
             
