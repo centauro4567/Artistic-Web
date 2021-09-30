@@ -136,7 +136,6 @@ window.addEventListener('load', function(){
                     durationDiv.innerHTML = formatSecondsAsTime(duracion)
                 }
                 
-                setTimeout(() => {
                     if(tiempoActual == duracion){
                         removeSongName();
                         forwardSong();
@@ -146,7 +145,7 @@ window.addEventListener('load', function(){
                         setTitle();
                         setImgCancion();
                     }
-                }, 601);
+
             })
 
         }
