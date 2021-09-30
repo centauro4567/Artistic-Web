@@ -20,7 +20,7 @@ window.addEventListener('load', function(){
     const imgCancion = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17']
 
     //PlayList
-    const songList = ['Tema 6', 'Tema 4', 'Tema 3', 'Tema 2', 'Tema 5', 'Tema 1'];
+    const songList = ['tema 1', 'tema 2', 'tema 3', 'tema 4', 'tema 5', 'tema 6'];
     
     const nameSongs = []
 
